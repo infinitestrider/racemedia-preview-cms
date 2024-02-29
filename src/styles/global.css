@@ -5,8 +5,8 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #0077CC;
+	--accent-dark: #8a3700;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -16,37 +16,44 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-family: 'Poppins', sans-serif;
+
+	src: url('/https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-family: 'Poppins', sans-serif;
+
+	src: url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background: linear-gradient(to right, #8d705b63, #62869836);
+	background-color: black;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	color: white;
+	font-size: 12px;
 	line-height: 1.7;
 }
 main {
-	width: 720px;
+	width: 640px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 40px;
+	background-color: #11111135;
+	box-shadow: 0 4px 10px #00000088;
+	border-radius: 10px;
+	margin-bottom: 200px;
 }
 h1,
 h2,
@@ -55,23 +62,25 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: white;
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 1.052em;
+	color: white;
+	text-decoration: underline solid rgb(255, 255, 255,0.62);
 }
 h2 {
 	font-size: 2.441em;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: 10px;
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 10px;
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 10px;
 }
 strong,
 b {
@@ -85,6 +94,7 @@ a:hover {
 }
 p {
 	margin-bottom: 1em;
+	color: white;
 }
 .prose p {
 	margin-bottom: 2em;
@@ -101,12 +111,12 @@ table {
 }
 img {
 	max-width: 100%;
-	height: auto;
+	height: 20%;
 	border-radius: 8px;
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: transparent;
 	border-radius: 2px;
 }
 pre {
@@ -126,12 +136,101 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+
+
+iframe {
+	width: 100%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: black;
+	box-shadow: 20px 20px 21px #00000000;
+	border-style: none;
+	float: none;
+	scrollbar-track-color: white;	
+}
+
+.read_more {
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #222222;
+	color: rgb(255, 255, 255) !important;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	width: 100%;
+	max-width: none;
+	text-align: center;
+	display: inline-block;
+	transition: ease-in all 0.5s;
+	font-weight: 500;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.read_more:hover {
+   background: #000;
+   color:  rgb(255, 255, 255) !important;
+   transition: ease-in all 0.5s;
+}
+
+.read_more-content {
+   margin-top: -23px;
+   display: none;
+}
+
+.read_more-content a {
+   color: rgb(255, 255, 255) !important;
+   text-decoration: none;
+}
+
+.read_more-content a:hover {
+   background-color: #000000;
+}
+
+.read_more-dropdown:hover .read_more-content {
+   display: inherit;
+   transition: ease-in all 1s;
+
+}
+
+.video_paragraph_header {
+   text-align: center; 
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   max-width: fit-content;
+   margin-bottom: 20px;
+   margin-top: 10px;
+   font-size: 12px;
+   color: white;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
+   border-radius: 8px;
+   background-color: #080808;
+
+}
+
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 10px;
 	}
 	main {
-		padding: 1em;
+		padding: 22px;
+        margin-bottom: 70%;
+		margin-top: 60%;
+        width: 83%;
+	}
+	iframe {
+		width: 100%;
+		height: 130px;
+	}
+	.read_more {
+		font-size: 10px;
 	}
 }
 

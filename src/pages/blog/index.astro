@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
@@ -17,7 +17,10 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 960px;
+				width: 60%;
+				background-color: ;
+				margin-bottom: 128px;
+				box-shadow: none;
 			}
 			ul {
 				display: flex;
@@ -34,20 +37,24 @@ const posts = (await getCollection('blog')).sort(
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
+			ul li *:hover {
+				color: grey;
+			}
 			ul li:first-child {
-				width: 100%;
+				width: %;
 				margin-bottom: 1rem;
-				text-align: center;
+				text-align: left;
+				color: white;
 			}
 			ul li:first-child img {
 				width: 100%;
 			}
 			ul li:first-child .title {
-				font-size: 2.369rem;
+				font-size: 10px;
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-				border-radius: 12px;
+				border-radius: 4px;
 			}
 			ul li a {
 				display: block;
@@ -56,31 +63,37 @@ const posts = (await getCollection('blog')).sort(
 				margin: 0;
 				color: rgb(var(--black));
 				line-height: 1;
+				color: rgb(255, 255, 255);
 			}
 			.date {
 				margin: 0;
-				color: rgb(var(--gray));
+				color: rgba(255, 255, 255, 0.788);
 			}
 			ul li a:hover h4,
 			ul li a:hover .date {
-				color: rgb(var(--accent));
+				color: white;
 			}
 			ul a:hover img {
-				box-shadow: var(--box-shadow);
+				box-shadow: ;
 			}
 			@media (max-width: 720px) {
+				main {
+					margin-top: 160px;
+					margin-bottom: 200px;
+					width: 99%;
+				}
 				ul {
 					gap: 0.5em;
 				}
-				ul li {
+				 li {
 					width: 100%;
 					text-align: center;
 				}
-				ul li:first-child {
+				 li:first-child {
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
-					font-size: 1.563em;
+					font-size: 10px;
 				}
 			}
 		</style>
