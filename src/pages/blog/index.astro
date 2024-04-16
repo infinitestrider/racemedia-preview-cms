@@ -76,6 +76,31 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: ;
 			}
+			.video_paragraph_header2 {
+				text-align: left; 
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				max-width: fit-content;
+				margin-bottom: 20px;
+				margin-top: 10px;
+				font-size: 10px;
+				color: white;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 30px;
+				padding-right: 30px;
+				border-radius: 8px;
+				background-color: #080808c5;
+			}
+			.video_paragraph_header2 a {
+					color: #0077CC;
+					text-decoration: none;
+			}
+			.video_paragraph_header2 a:hover {
+					color: #0095ff;
+					text-decoration: none;
+			}
 			@media (max-width: 720px) {
 				main {
 					margin-top: 160px;
@@ -95,12 +120,24 @@ const posts = (await getCollection('blog')).sort(
 				ul li:first-child .title {
 					font-size: 10px;
 				}
+				.video_paragraph_header2 {
+					font-size: 70%;
+					padding: 5%;
+					border-radius: 5px;
+					margin-right: 7%;
+			    }
+				.video_paragraph_header2 a {
+					
+			    }
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
+			<!---Head display -->
+			<div class="video_paragraph_header2"> • You can choose to buy and keep the entire library permanently for a discounted price of $1.50 per video, which would be $205 for all 137+ videos. We want to keep things affordable, so take a look at the previews and see if it's worth it for you. Your support means a lot to us! <a href="https://pul.ly/b/320274">Buy all</a></div>
+			<!---Head display end -->
 			<section>
 				<ul>
 					{

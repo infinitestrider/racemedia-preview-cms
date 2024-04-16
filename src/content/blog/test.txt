@@ -15,10 +15,10 @@ She came back to make another Legendary one, reach out to her to get your own do
 <a class="read_more" href="https://pul.ly/b/317368">Checkout</a>
 <a class="read_more" href="https://www.wishtender.com/racemedia/?item=65972ce9c87e980002868937">Wishtender</a>
 <a class="read_more" href="#">Link 3</a>--->
-<div class="prod_details">
+<!---<div class="prod_details">
 • You can choose to buy and keep the entire library permanently for a discounted price of $1.50 per video, which would be $205 for all 137+ videos. We want to keep things affordable, so take a look at the previews and see if it's worth it for you. Your support means a lot to us!.
 </div>
-<a class="read_more" onclick="toggleReadMore()" href="https://pul.ly/b/320274">Buy All</a>
+<a class="read_more" onclick="toggleReadMore()" href="https://pul.ly/b/320274">Buy All</a>--->
 </div>
 </div>
 <script>
