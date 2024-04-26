@@ -215,6 +215,13 @@ iframe {
 
 }
 
+.video_call_to_action {
+	text-align: center;
+	font-weight:bold ;
+	font-style: italic;
+ 
+ }
+
 .prod_details {
 	text-align: left;
 	text-decoration: solid  0.8px;
