@@ -36,7 +36,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(to right, #59b1ffcc, #fff);
+	background: linear-gradient(to right, #000000cf, #000000c9);
 	background-color: white;
 	background-size: 100% 600px;
 	word-wrap: break-word;
@@ -250,7 +250,7 @@ iframe {
 	}
 	.read_more {
 		font-size: 11px;
-		border-radius: 5px;
+		border-radius: 20px;
 	}
 
 	.video_paragraph_header {
