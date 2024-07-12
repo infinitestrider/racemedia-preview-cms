@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>How to Subscribe</h1>
+			<p>
+				Click the button at the bottom to <a href="https://pul.ly/b/323970">purchase</a> a subscription.<br>
+                You will not be billed monthly automatically; you have to purchase manually every time, you are in control. You get access to ALL full videos that we have teased so far, for $22.
+			</p>
+            <a class="read_more" onclick="toggleReadMore()" href="https://pul.ly/b/323970">Buy Now</a>
+			
+		</main>
+		<Footer />
+	</body>
+</html>
