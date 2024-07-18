@@ -1,0 +1,63 @@
+---
+import { SITE_TITLE } from '../consts';
+---
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Goal</title>
+    <style>
+        .sub-goal-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-goal-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            height: 30px;
+            width: 0;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 25px;
+        }
+
+        .sub-count {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .goal-count {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sub-goal-container">
+        <div class="sub-goal-header">Help Us Reach Our Subscription Goal!</div>
+        <div class="sub-count">Current Subscribers: <span id="currentSubs">50</span></div>
+        <div class="goal-count">Goal: <span id="goalSubs">100</span></div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+</body>
+</html>
