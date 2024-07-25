@@ -1,0 +1,36 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import SubGoal from "../components/SubGoal.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome</h1>
+			<p>
+				Welcome to the <a href="https://raceplay.site/">raceplay.site</a> Preview Library
+			</p>
+			<p>
+				Follow the preview links from our twitter feed, or
+				check the <a href="/blog">preview</a> section for everything we have in the library
+				Or go to the <a href="/purchase">purchase</a> page directly
+				<!--You can go to the Preview section to browse what we have.-->
+			</p>
+			<p>
+				Our main social medias are <a href="https://twitter.com/RaceplayVideos"
+					>Twitter
+				</a> and <a href="https://t.me/RaceplayClips">join us on Telegram</a> to ask questions.
+			</p>
+			<SubGoal></SubGoal>
+		</main>
+		<Footer />
+	</body>
+</html>
