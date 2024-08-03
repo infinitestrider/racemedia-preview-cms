@@ -179,7 +179,7 @@ iframe {
 }
 
 .read_more-content {
-   margin-top: -23px;
+   margin-top: -24px;
    display: none;
 }
 
@@ -189,7 +189,7 @@ iframe {
 }
 
 .read_more-content a:hover {
-   background-color: #000000;
+	
 }
 
 .read_more-dropdown:hover .read_more-content {

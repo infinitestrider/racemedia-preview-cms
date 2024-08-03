@@ -18,7 +18,7 @@
         }
 
         .sub-goal-header {
-            font-size: 12px;
+            font-size: 10px;
             margin-bottom: 5px;
         }
 
@@ -30,9 +30,23 @@
             margin-bottom: 10px;
         }
 
+        .sub-count {
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        .goal-count {
+            font-size: 8px;
+            margin-bottom: 10px;
+        }
+        
+        span {
+            color: #0077CC;
+        }
+
         .progress {
-            height: 12px;
-            width: 0;
+            height: 7px;
+            width: 47%; /* PROGRESS BAR if script is working properly use regular integer on base */
             background-color: #0077CC;
             text-align: center;
             line-height: 30px;
@@ -40,45 +54,17 @@
             border-radius: 25px;
         }
 
-        .sub-count {
-            font-size: 13px;
-            margin-bottom: 5px;
-        }
-
-        .goal-count {
-            font-size: 13px;
-            margin-bottom: 10px;
-        }
-        
-        span {
-            color: #0077CC;
-        }
     </style>
 </head>
 <body>
     <div class="sub-goal-container">
-        <div class="sub-goal-header">Site Maintenance: Subscriptions that directly help keep the site running.</div>
-        <div class="sub-count">Current Supporters: <span id="currentSubs">50</span></div>
+        <div class="sub-goal-header">Site Maintenance: Subscriptions directly help keep the site running.</div>
+        <div class="sub-count">Current Supporters: <span id="currentSubs">47</span></div>
         <div class="goal-count">Monthly Goal: <span id="goalSubs">100</span></div>
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>
     </div>
-
-    <script>
-        // Initialize subscription counts
-        const currentSubs = 12;
-        const goalSubs = 100;
-
-        // Calculate progress percentage
-        const progressPercentage = (currentSubs / goalSubs) * 100;
-
-        // Update progress bar width
-        //document.getElementById('progress').style.width = progressPercentage + '%';
-
-        // Update text content
-        //document.getElementById('currentSubs').textContent = currentSubs;
-        //document.getElementById('goalSubs').textContent = goalSubs;
     </script>
 </body>
 </html>
