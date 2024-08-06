@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SubGoal from '../components/SubGoal.astro';
+import Sub from '../components/Sub.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -13,19 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>How to Subscribe</h1>
-			<p>
-				<!--Click the button at the bottom to <a href="https://pul.ly/b/325116">purchase</a> a subscription.<br>
-                You will not be billed monthly automatically; you have to purchase whenever it is convenient for you. You get access to every videos that has been teased so far, for $22, current videos we have are over 130+ with weekly uploads.--->
-
-				Click the button at the bottom to <a href="https://pul.ly/b/325116">purchase</a> a subscription.
-				Access is $22 a month
-                you will not be billed automatically.
-			</p>
-            <a class="read_more" onclick="toggleReadMore()" href="https://pul.ly/b/325116">Subscribe</a>
-			<SubGoal></SubGoal>
-		</main>
+		<Sub></Sub>
 		<Footer />
 	</body>
 </html>
