@@ -5,7 +5,7 @@
  */
 
 :root {
-	--accent: #7400FF;
+	--accent: #0077CC;
 	--accent-dark: #8a3700;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
@@ -158,7 +158,8 @@ iframe {
 	font-size: 12px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #7400FF;
+	/*background-color: #0077CC;*/
+	background: linear-gradient(to left, #7400FF, #0077CC);
 	color: rgb(255, 255, 255) !important;
 	padding-top: 13px;
 	padding-bottom: 13px;
@@ -173,7 +174,7 @@ iframe {
 }
 
 .read_more:hover {
-   background: #7400FF80;
+   background: #7300ff;
    color:  rgb(255, 255, 255) !important;
    transition: ease-in all 0.5s;
 }
