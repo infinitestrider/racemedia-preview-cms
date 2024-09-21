@@ -236,6 +236,25 @@ iframe {
 	margin-bottom: 10px;
 }
 
+.crypto_copy_section {
+	text-align: left; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: fit-content;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 13px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 8px;
+	background-color: #080808;
+ 
+ }
+
 @media (max-width: 720px) {
 	body {
 		font-size: 10px;
@@ -263,6 +282,11 @@ iframe {
 	.prod_details {
 		font-size: 9px;
 	}
+	.crypto_copy_section {
+		font-size: 80%;
+		padding: 5%;
+		border-radius: 5px;
+	 }
 }
 
 .sr-only {
