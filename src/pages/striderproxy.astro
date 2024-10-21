@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sub from '../components/Sub.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <!---<li><h1>Process</h1></li>--->
+        <p>
+            <li>You will be directed to a third-party platform, Strider, which partners with Pulley to facilitate the token purchase.</li>
+			<li>This approach provides more flexible ways to share content while prioritizing privacy.</li>
+			<li>After purchasing the token through Strider, they will send an invite link that redirects back to the Channel.</li>
+			<li>Along with your receipt from Strider, the token you receive will serve as proof of membership for rp.site—similar to buying a ticket to a show, with Strider acting as the ticket distributor.</li>
+            
+			If you encounter any issues, please contact us directly, rather than Strider.<br><br>
+        </p>
+        <a class="read_more" onclick="toggleReadMore()" href="https://strider-link-share.netlify.app/stride-this-link/">Get Token</a>
+        
+        </main>
+		<Footer />
+	</body>
+</html>
