@@ -1,0 +1,53 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sub from '../components/Sub.astro';
+import Adbanner from '../components/Adbanner.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+        <h1>Troubleshoot</h1>
+        <p>
+            1. Browser Issues:
+
+            Clear Cookies and Cache
+            A buildup of old data can sometimes cause login issues. Clearing your browser's cookies and cache can help resolve this.<br>
+        
+            Use Private Browsing
+            Try logging in through an incognito or private browsing window to bypass potential interference from extensions or stored data.<br>
+        
+            Disable Extensions
+            Certain browser extensions, such as ad blockers, can sometimes conflict with the prcoess. Try disabling them to see if it resolves the problem.<br>
+        
+            Update Browser
+            Make sure your web browser is up to date, as outdated versions can cause compatibility issues.<br>
+        
+            Try a Different Browser
+            If the problem persists, use a different browser to determine if the issue is specific to your primary one.<br>
+        
+        2. App Issues:
+        
+            Sign Out and Uninstall
+            If you're using the Patreon app, try signing out, uninstalling the app, restarting your device, and then reinstalling the latest version.<br>
+        
+            Check for Updates
+            Ensure both the Patreon app and your device's operating system are up to date.<br>
+        
+            Reinstall the App
+            A clean install of the app can fix issues caused by corrupted files.<br>
+        </p>
+        <a class="read_more" onclick="toggleReadMore()" href="https://www.patreon.com/login?ru=%2Fcheckout%2F9847982%3Frid%3D9388743">Subscribe</a>
+    
+    </main>
+		<Footer />
+	</body>
+</html>
