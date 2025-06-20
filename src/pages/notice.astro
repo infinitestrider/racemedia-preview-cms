@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sub from '../components/Sub.astro';
+import Adbanner from '../components/Adbanner.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+        <h1></h1>
+        <p>
+            <style>
+                .indented-text {
+                  margin-left: 6%; /* Adjust the value for more or less space */
+                }
+                .indented-text2 {
+                  margin-left: 8%; /* Adjust the value for more or less space */
+                }
+              </style>
+            <p>• When subscribing make sure you do it via a web browser (desktop or mobile) or the Patreon Android app. This is the most reliable way to maintain your access.<br></p>
+
+            <p class="indented-text">•Caution: Subscribing through the Patreon iOS (Apple) app may result in access issues.</p>
+                
+            <p class="indented-text2">•Payments made via the Apple app are managed by Apple and subject to their unique processing policies. You will be subjected to their fees which are almost double the cost of the original price, access may not be granted when you use the Patreon App via iOS use your dedicated browser.</p>
+            
+        </p>
+        <a class="read_more" onclick="toggleReadMore()" href="https://www.patreon.com/login?ru=%2Fcheckout%2F9847982%3Frid%3D9388743">Subscribe</a>
+    
+    </main>
+		<Footer />
+	</body>
+</html>
