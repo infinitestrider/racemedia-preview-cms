@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Adbanner from '../components/Adbanner.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title={`${SITE_TITLE} - Policies`} description="Learn about our policies, including cookie usage and refund terms." />
+    </head>
+    <body>
+        <Header />
+        
+        <main>
+            <section>
+                <h1>Policies</h1>
+                
+                <h3>Cookie Policy</h3>
+                <p>
+                    We use cookies to enhance your browsing experience and to analyze site traffic. By using our site, you consent to the use of cookies in accordance with our cookie policy. 
+                    Cookies are small text files stored on your device that help us improve functionality and provide personalized content. You can manage or disable cookies through your browser settings.
+                </p>
+                
+                <h3>Refund Policy</h3>
+                <p>
+                    Refunds are only valid within 30 minutes of subscribing. After this period, refunds are no longer available. 
+                    Refunds will only be granted if the situation merits, such as accidental charges or technical issues, and must be requested within the 30-minute window. 
+                    If you encounter any issues, please contact our support team immediately for assistance at 
+                    <a href="mailto:contact@raceplay.info">contact@raceplay.info</a>.
+                </p>
+
+                <h3>Privacy Policy</h3>
+                <p>
+                    We value your privacy and are committed to protecting your personal information. Any data collected, such as email addresses or payment details, will be used solely for providing our services and improving your experience. 
+                    We do not share your information with third parties except as required by law or to process subscriptions securely.
+                </p>
+
+                <h3>Content Usage Policy</h3>
+                <p>
+                    All content on this site and its affiliated is protected by copyright. Redistribution, reproduction, or sharing of content without permission is strictly prohibited. 
+                    Violations of this policy may result in legal action.
+                </p>
+
+                <h3>Support Policy</h3>
+                <p>
+                    Our support team is available to assist with technical issues, account problems, and general inquiries. 
+                    Please contact us at <a href="mailto:contact@raceplay.info">contact@raceplay.info</a>. We aim to respond to all inquiries within 24-48 hours.
+                </p>
+
+                <h3>Modification of Policies</h3>
+                <p>
+                    We reserve the right to update or modify these policies at any time. Changes will be effective immediately upon posting to this page. 
+                    Users are encouraged to review this page periodically to stay informed about our policies. Continued use of the site constitutes acceptance of any changes.
+                </p>
+            </section>
+        </main>
+        
+        <Adbanner />
+        <Footer />
+    </body>
+</html>
